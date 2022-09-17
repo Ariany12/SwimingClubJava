@@ -2,6 +2,17 @@ package com.swimingclub;
 
 public abstract class Clubstaff {
 	
+	private static int NEXTID = 1;
+	
+	public Clubstaff(String name) {
+		this.name = name;
+		this.id = NEXTID;
+		
+		NEXTID++;
+	}
+
+
+
 	private String name;
 	private int id;
 	

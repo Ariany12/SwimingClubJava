@@ -11,7 +11,7 @@ public class Main {
 
 				int userInput = 0;
 
-				/* do {
+				do {
 					System.out.println(" ************** Swimer Club ***************** ");
 					System.out.println("Opcao 1: List all staff");
 					System.out.println("Opcao 2: List staff by category");
@@ -64,7 +64,7 @@ public class Main {
 						System.out.println("Opcaoo invalida. Informe uma opcaoo de 1 a 12");
 						break;
 					}
-				} while (userInput != 9); */
+				} while (userInput != 9); 
 	}
 
 }
