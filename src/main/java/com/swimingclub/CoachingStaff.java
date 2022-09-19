@@ -3,19 +3,18 @@ package com.swimingclub;
 public abstract class CoachingStaff {
 	
 	private String name;
-	private int id;
+	private static int NEXTID = 100;
 	private int qualificationNumber;
 	
 	
-	public CoachingStaff(String name, int id, int qualificationNumber) {
+	public CoachingStaff(String name, int qualificationNumber) {
 		super();
 		this.name = name;
-		this.id = id;
 		this.qualificationNumber = qualificationNumber;
+		
+		NEXTID++;
 	}
 
-
-	
 	public String getName() {
 		return name;
 	}
@@ -24,12 +23,8 @@ public abstract class CoachingStaff {
 		this.name = name;
 	}
 
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
+	public int getNEXTID() {
+		return NEXTID;
 	}
 
 	public int getQualificationNumber() {
@@ -40,14 +35,15 @@ public abstract class CoachingStaff {
 		this.qualificationNumber = qualificationNumber;
 	}
 
-
-
 	@Override
 	public String toString() {
-		return "CoachingStaff [name=" + name + ", id=" + id + ", qualificationNumber=" + qualificationNumber + "]";
+		return "CoachingStaff [name=" + name + ", qualificationNumber=" + qualificationNumber + "]";
 	}
-	
+
+
+
 	
 }
-	
+
+
 	

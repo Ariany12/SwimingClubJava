@@ -1,12 +1,14 @@
 package com.swimingclub;
 
-public class Swimminggroups {
+public class SwimmingGroups {
 	
+	private String name;
 	private String identifier;
 	private int swimmer;
+	private String day;
 	
 	
-	public Swimminggroups(String identifier, int swimmer) {
+	public SwimmingGroups(String identifier, int swimmer) {
 		super();
 		this.identifier = identifier;
 		this.swimmer = swimmer;
@@ -18,9 +20,6 @@ public class Swimminggroups {
 		return identifier;
 	}
 	
-	public void setIdentifier(String identifier) {
-		this.identifier = identifier;
-	}
 
 
 	public int getSwimmer() {

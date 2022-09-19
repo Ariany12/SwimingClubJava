@@ -1,10 +1,10 @@
 package com.swimingclub;
 
-public abstract class Clubstaff {
+public abstract class ClubStaff {
 	
 	private static int NEXTID = 1;
 	
-	public Clubstaff(String name) {
+	public ClubStaff(String name) {
 		this.name = name;
 		this.id = NEXTID;
 		
@@ -17,8 +17,7 @@ public abstract class Clubstaff {
 	private int id;
 	
 	
-	
-	
+
 	public String getName() {
 		return name;
 	}
@@ -32,9 +31,6 @@ public abstract class Clubstaff {
 		return id;
 	}
 	
-	public void setId(int id) {
-		this.id = id;
-	}
 
 
 
