@@ -6,7 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 	
-				
+		/*		
 				SwimClub swimclub = new SwimClub();
 
 				int userInput = 0;
@@ -64,13 +64,14 @@ public class Main {
 						System.out.println("Opcaoo invalida. Informe uma opcaoo de 1 a 12");
 						break;
 					}
-				} while (userInput != 9); 
-	}
+				} while (userInput != 9);  */
+	
 
-}
+				}
+		
 
 		
-	
+}
 	
 
 

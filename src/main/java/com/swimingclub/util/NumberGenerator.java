@@ -21,14 +21,8 @@ public abstract class NumberGenerator {
 		return level1[random.nextInt(level1.length)];
 	}
 	
-
-	public static void main(String[] args) {
-		
-		System.out.println(numberGenerator());
-		System.out.println(numberGeneratorGroups());
-		
-
-	}
-
+	
 }
+
+
 

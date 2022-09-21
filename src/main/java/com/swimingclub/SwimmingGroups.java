@@ -3,34 +3,46 @@ package com.swimingclub;
 public class SwimmingGroups {
 	
 	private String name;
-	private String identifier;
 	private int swimmer;
 	private String day;
 	
 	
-	public SwimmingGroups(String identifier, int swimmer) {
+	public SwimmingGroups(String name, int swimmer, String day) {
 		super();
-		this.identifier = identifier;
+		this.name = name;
 		this.swimmer = swimmer;
+		this.day = day;
+	}
+
+
+	public String getName() {
+		return name;
 	}
 
 
 	
-	public String getIdentifier() {
-		return identifier;
-	}
-	
-
 
 	public int getSwimmer() {
 		return swimmer;
 	}
 
+
 	public void setSwimmer(int swimmer) {
 		this.swimmer = swimmer;
+	}
+
+
+	public String getDay() {
+		return day;
+	}
+
+
+	public void setDay(String day) {
+		this.day = day;
 	}
 	
 	
 	
+
 
 }

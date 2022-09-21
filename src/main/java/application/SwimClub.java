@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import com.swimingclub.ClubStaff;
 import com.swimingclub.CoachingStaff;
+import com.swimingclub.Swimmers;
 import com.swimingclub.SwimmingGroups;
 import com.swimingclub.admstaff.Caretaker;
 import com.swimingclub.admstaff.Cleaner;
@@ -11,8 +12,8 @@ import com.swimingclub.admstaff.Receptionist;
 import com.swimingclub.coachingstaff.AssistantCoach;
 import com.swimingclub.coachingstaff.HeadCoach;
 import com.swimingclub.coachingstaff.SwimTeacher;
-import com.swimingclub.util.GrupGenerator;
-import com.swimingclub.util.GrupoGenerator;
+import com.swimingclub.util.DayGenerator;
+import com.swimingclub.util.GroupGenerator;
 import com.swimingclub.util.NameGenerator;
 import com.swimingclub.util.NumberGenerator;
 
@@ -21,8 +22,10 @@ public class SwimClub {
 	
 	int x = 0;
 	int y = 0;
+	int z = 0;
+	int w = 0;
 
-	public SwimClub() {
+	public SwimClub(String name) {
 		
 		//At least 10 Admin staff of various types (they cannot all be the same type). There must be at
 		//least 2 different types of Admin staff.
@@ -83,17 +86,34 @@ public class SwimClub {
 
 		ArrayList<SwimmingGroups> swimminggroups = new ArrayList< SwimmingGroups>();
 		
-		 int aux = NumberGenerator.numberGeneratorGroups();
+		ArrayList<SwimmingGroups> aux = new ArrayList< SwimmingGroups>();
 		
-		swimminggroups.add(new SwimmingGroups((GrupGenerator.grupGenerator()).
-			
+		while(z < 50) {
 		
+			int id = 0;
+		//	aux.add(new SwimmingGroups (GroupGenerator.groupGenerator(),  NumberGenerator.numberGeneratorGroupsSwimmers() + id ,  DayGenerator.dayGenerator()));
 		
+			if (!(swimminggroups.contains(aux))){
+			swimminggroups.addAll(aux);
+			z++;
+			id++;
+			}	
+		}
 		
+		// Include at least 300 Swimmers
+		
+		while (w < 350) {
+			ArrayList<Swimmers> swimmers = new ArrayList< Swimmers>();
+		
+			//swimmers.add(new Swimmers (NameGenerator.nameGenerator(), NumberGenerator.numberGeneratorGroupsSwimmers(), GroupGenerator.groupGenerator()));
+			w++;
+		}
 
+	
 		
+	}	
 		
-	}
+	
 	public void listallstaff() {
 		
 		
