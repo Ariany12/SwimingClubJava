@@ -3,6 +3,9 @@ package com.swimingclub;
 public abstract class ClubStaff {
 	
 	private static int NEXTID = 1;
+	private String name;
+	private int id;
+	
 	
 	public ClubStaff(String name) {
 		this.name = name;
@@ -11,12 +14,6 @@ public abstract class ClubStaff {
 		NEXTID++;
 	}
 
-
-
-	private String name;
-	private int id;
-	
-	
 
 	public String getName() {
 		return name;

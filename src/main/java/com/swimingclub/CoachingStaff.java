@@ -3,7 +3,8 @@ package com.swimingclub;
 public abstract class CoachingStaff {
 	
 	private String name;
-	private static int NEXTID = 100;
+	private static int NEXTID = 1;
+	private int id;
 	private int qualificationNumber;
 	
 	
@@ -11,10 +12,13 @@ public abstract class CoachingStaff {
 		super();
 		this.name = name;
 		this.qualificationNumber = qualificationNumber;
+		this.id = NEXTID;
 		
 		NEXTID++;
 	}
 
+	
+	
 	public String getName() {
 		return name;
 	}
